@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">E-deals</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="email_validation">Enter Valid Email</string>
+    <string name="first_name_validation">Name cannot be empty</string>
+    <string name="last_name_validation">Invalid Lasy Name</string>
+    <string name="phone_validation">Invalid Phone</string>
+    <string name="college_validation">Invalid College Name</string>
+    <string name="password_validation">Password does not meet creteria</string>
+    <string name="password_duplication_validation">Passwords donot match</string>
+    <string name="error_weak_password">Weak Password</string>
+    <string name="error_invalid_email">Invalid email ID</string>
+    <string name="error_user_exists">Email already registed</string>
+
+    <string name="error_phone_length">Phone No. should be of length 10</string>
+
+    <string name="user_creation_error">Unable to create user</string>
+    <string name="authentication_error">Authentication Failed</string>
+    <string name="fill_details_warning">Fill all details</string>
+    <string name="password_mismatch_warning">Password donot match</string>
+    <string name="permission_warning">Permission required to upload Pic</string>
+    <string name="annon_user_auth_error">Annonymous User Authentication Failed</string>
+    <string name="email_pass_incorrect_error">Either E-mail or password incorrect</string>
+    <string name="invalid_username_error">Invalid Username</string>
+    <string name="auth_failed_error">Authentication Failed</string>
+    <string name="product_get_failed_error">Failed to get all products</string>
+
+    <string name="register_password_validation">Password must contain atleast 6 characters</string>
+    <string name="year_validation">Year should not be empty</string>
+    <string name="error_empty_college">College name can not be empty</string>
+
+    <string name="feedback_text">Hi\nI have downloaded Quad app and I would like to share my feedback for the app: /n1. </string>
+
+    <string-array name="year_choices">
+        <item>Personal Busines</item>
+        <item>Dealer </item>
+        <item>Buyer </item>
+        <item>None</item>
+
+    </string-array>
+
+    <string name="temp">hello e-deals app</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="products">Products</string>
+
+</resources>

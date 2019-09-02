@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.tominc.prustyapp.AddProductActivity">
+
+    <include
+        android:id="@+id/add_product_toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/add_prod_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/add_slider_relative"
+                android:elevation="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/add_image_slider"
+                    custom:pager_animation="Accordion"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation_span="1100"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/add_image_indicator"
+                    style="@style/AndroidImageSlider_Attractive_Rect_Blue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    custom:selected_color="@color/colorAccent"
+                    custom:unselected_color="#E8E8E8"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/add_product_image"
+                    android:background="@android:color/background_light"
+                    android:src="@drawable/ic_menu_camera"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_product_name"
+                        android:singleLine="true"
+                        android:hint="Name of Product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_product_price"
+                        android:layout_marginTop="8dp"
+                        android:hint="Price (Rs.)"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/add_product_description"
+                    android:hint="Description"
+                    android:padding="16dp"
+                    android:minLines="6"
+                    android:gravity="top"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_product_phone"
+                        android:hint="Phone"
+                        android:padding="16dp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_product_email"
+                        android:hint="Email"
+                        android:padding="16dp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_product_year"
+                        android:hint="Year"
+                        android:padding="16dp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_product_location"
+                        android:hint="Location"
+                        android:padding="16dp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_product_college"
+                        android:hint="College"
+                        android:padding="16dp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/add_product_button"
+                android:layout_marginTop="16dp"
+                android:text="Add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

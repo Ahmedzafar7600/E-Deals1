@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    app:contentPadding="2dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/scraprow"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/rImageView"
+            android:layout_width="129dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Price"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rDescriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_margin="7dp"
+                android:text="Description"
+                android:textColor="#000"
+                android:textSize="10sp"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/rbrandtv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Brand Name"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_gravity="top"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/rlocationtv"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="7dp"
+        android:clickable="true"
+        android:text="Location"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Aboutus"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="148dp"
+        android:layout_height="131dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/abo"
+        android:foregroundGravity="center" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:id="@+id/tv2"
+        android:textSize="18dp"
+        android:layout_height="478dp"
+        android:layout_below="@+id/imgv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:text="E-Deals is an Android App which provides Deals and offers on a wide variety of products from popular brands and local vendors.
+We developed this app as our Final Year project for the degree of BS Software Engineering in University of Gujrat."/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-228dp"
+        android:text="Developers:"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="-196dp"
+        android:text="Abdul Salam \n(engr.abdulsalam@outlook.com)"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="-148dp"
+        android:maxLines="2"
+        android:text="Hamza Pervaiz \n(hamzashiekh123456@gmail.com)"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_below="@+id/tv5"
+        android:layout_marginTop="-104dp"
+        android:maxLines="2"
+        android:text="Noman Afzal \n(inomanafzal@gmail.com)"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tominc.prustyapp.ProductLikedFragment">
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/product_progress"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <include
+        android:id="@+id/loading_data"
+        layout="@layout/loading_data" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_liked_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/no_data_found"
+        android:visibility="gone"
+        layout="@layout/no_data_found" />
+
+</RelativeLayout>

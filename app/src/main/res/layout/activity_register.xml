@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.tominc.prustyapp.RegisterActivity">
+
+    <include
+        android:id="@+id/register_toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/register_items"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/register_image"
+                    android:src="@drawable/ic_male_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_color="#EEEEEE"
+                    android:background="#fafafa"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="10"
+                    app:civ_shadow_color="#8BC34A" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/register_f_name"
+                        android:hint="First Name"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/register_l_name"
+                        android:hint="Last Name"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/register_email"
+                android:hint="Email"
+                android:layout_marginTop="16dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/register_pass"
+                android:layout_marginTop="16dp"
+                android:hint="Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/register_con_pass"
+                android:layout_marginTop="16dp"
+                android:hint="Confirm Password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_marginTop="16dp"
+                android:hint="+92"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/register_city"
+                android:layout_marginTop="16dp"
+                android:hint="City"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/register_year"
+                android:layout_marginTop="16dp"
+                android:hint="Year"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/register_submit"
+                    android:text="Register"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/register_clear"
+                    android:text="Clear"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+        <!--<net.bohush.geometricprogressview.GeometricProgressView-->
+            <!--android:id="@+id/progress_bar"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:gp_type="kite"-->
+            <!--app:gp_number_of_angles="20"-->
+            <!--app:gp_color="@color/colorAccent"-->
+            <!--app:gp_duration="1000"-->
+            <!--app:gp_figure_padding="3dp" />-->
+
+        <include
+            android:id="@+id/logging_in"
+            android:visibility="gone"
+            layout="@layout/logging_in_layout" />
+
+    </RelativeLayout>
+
+</LinearLayout>
